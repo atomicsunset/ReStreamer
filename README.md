@@ -2,6 +2,12 @@
 
 A desktop application for streaming video files to RTMP servers (YouTube, Facebook, or custom RTMP) without needing vMix or OBS.
 
+## Screenshot
+
+![Atomation ReStreamer Interface](screenshots/atomation-restreamer-ui.png)
+
+*Modern dark neomorphic UI with YouTube, Facebook, and custom RTMP support*
+
 ## Features
 
 - **Dark Neomorphic UI** - Modern, clean interface with soft shadows

@@ -42,7 +42,11 @@
       "Bash(xcopy /E /I /H /Y \"C:\\OHREPORT\\Dropbox\\01_vMIX\\Tools\\ReStreamer\" \"C:\\OHREPORT\\Dropbox\\01_vMIX\\Tools\\ReStreamer-Private\")",
       "Bash(git init:*)",
       "Bash(git config:*)",
-      "Bash(start \"\" \"build\\bin\\Atomation-ReStreamer.exe\")"
+      "Bash(start \"\" \"build\\bin\\Atomation-ReStreamer.exe\")",
+      "Bash(git tag:*)",
+      "Bash(gh release create:*)",
+      "Bash(start \"\" \"https://github.com/atomicsunset/ReStreamer/releases/new?tag=v1.1.0\")",
+      "Bash(start \"\" \"screenshots\")"
     ],
     "deny": [],
     "ask": []
