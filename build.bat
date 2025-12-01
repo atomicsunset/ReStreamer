@@ -57,6 +57,6 @@ echo ========================================
 echo Build completed successfully!
 echo ========================================
 echo.
-echo Your application is ready in: build\bin\OH.Report-ReStreamer.exe
+echo Your application is ready in: build\bin\Atomation-ReStreamer.exe
 echo.
 pause

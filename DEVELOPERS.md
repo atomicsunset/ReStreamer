@@ -1,8 +1,8 @@
-# OH.Report ReStreamer - Developer Documentation
+# Atomation ReStreamer - Developer Documentation
 
 ## Project Overview
 
-OH.Report ReStreamer is a standalone Windows application built with Wails v2 that streams pre-recorded videos to RTMP platforms without requiring vMix or OBS. The application embeds FFmpeg for video processing and uses WebView2 for the frontend.
+Atomation ReStreamer is a standalone Windows application built with Wails v2 that streams pre-recorded videos to RTMP platforms without requiring vMix or OBS. The application embeds FFmpeg for video processing and uses WebView2 for the frontend.
 
 ## Technology Stack
 

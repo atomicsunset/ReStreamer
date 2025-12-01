@@ -1,8 +1,8 @@
-# OH.Report ReStreamer - User Guide
+# Atomation ReStreamer - User Guide
 
 ## What is ReStreamer?
 
-OH.Report ReStreamer is a simple tool for streaming pre-recorded videos to platforms like Castr, Facebook, and YouTube without needing heavy software like vMix or OBS. Perfect for delayed broadcasts and scheduled content.
+Atomation ReStreamer is a simple tool for streaming pre-recorded videos to platforms like Facebook and YouTube without needing heavy software like vMix or OBS. Perfect for delayed broadcasts and scheduled content.
 
 ## System Requirements
 
@@ -14,7 +14,7 @@ OH.Report ReStreamer is a simple tool for streaming pre-recorded videos to platf
 
 **There is no installation!**
 
-1. Download `OH.Report-ReStreamer.exe` from the `dist` folder
+1. Download `Atomation-ReStreamer.exe` from the GitHub release
 2. Copy it anywhere on your computer
 3. Double-click to run
 

@@ -18,7 +18,7 @@ var extractedDir string
 // ExtractEmbeddedBinaries extracts ffmpeg and ffprobe to a temporary directory
 func ExtractEmbeddedBinaries() (string, error) {
 	// Create a temp directory in the user's temp folder
-	tempDir := filepath.Join(os.TempDir(), "OH.Report-ReStreamer")
+	tempDir := filepath.Join(os.TempDir(), "Atomation-ReStreamer")
 
 	// Create the directory if it doesn't exist
 	if err := os.MkdirAll(tempDir, 0755); err != nil {

@@ -1,6 +1,6 @@
-# ReStreamer
+# Atomation ReStreamer
 
-A desktop application for streaming video files to RTMP servers (Castr.io, YouTube, Facebook, or custom RTMP) without needing vMix or OBS.
+A desktop application for streaming video files to RTMP servers (YouTube, Facebook, or custom RTMP) without needing vMix or OBS.
 
 ## Features
 
@@ -9,7 +9,7 @@ A desktop application for streaming video files to RTMP servers (Castr.io, YouTu
 - **Auto-Reconnect** - Automatic reconnection with up to 3 retry attempts
 - **Quality Presets** - Four streaming quality options (Low 540p, Medium 720p, High 1080p, Ultra 1080p)
 - **Smart Stop Confirmation** - Warns before stopping streams with significant time remaining
-- **Multi-Service Support** - Stream to Castr.io, YouTube, Facebook, or any custom RTMP server
+- **Multi-Service Support** - Stream to YouTube, Facebook, or any custom RTMP server
 - **Stream Timer** - Real-time display of elapsed, remaining, and total time
 - Stream any video file (MP4, AVI, MOV, MKV, FLV, WMV, etc.)
 - Built with Go and Wails for cross-platform support
@@ -78,34 +78,39 @@ The built application will be in the `build/bin` directory.
 
 1. **Launch ReStreamer**
    - In development: `wails dev`
-   - Production: Run the executable from `build/bin/ReStreamer.exe`
+   - Production: Run the executable from `build/bin/Atomation-ReStreamer.exe`
 
-2. **Get your Castr.com credentials**
-   - Log in to your Castr.com account
-   - Go to your dashboard
-   - Copy your Stream Key
+2. **Get your streaming credentials**
+   - For YouTube: Get your stream key from YouTube Studio
+   - For Facebook: Get your stream key from Facebook Live Producer
+   - For custom RTMP: Get credentials from your streaming service
 
 3. **Configure the stream**
    - Click "Browse" to select your video file
-   - Enter the RTMP URL (default: `rtmp://stream.castr.com/live`)
-   - Enter your Stream Key from Castr.com
+   - Select your service from the dropdown (YouTube, Facebook, or Custom RTMP)
+   - Enter your Stream Key
 
 4. **Start streaming**
-   - Click "Start Streaming"
-   - Your video will begin streaming to Castr.com
-   - The status indicator will show "Streaming..." while active
+   - Click "Start"
+   - Your video will begin streaming
+   - The status indicator will show "Streaming" while active
 
 5. **Stop streaming**
-   - Click "Stop Streaming" when you're done
+   - Click "Stop" when you're done
 
-## Castr.com RTMP Settings
+## Streaming Service URLs
 
-The default RTMP URL for Castr.com is:
+**YouTube Live:**
 ```
-rtmp://stream.castr.com/live
+rtmp://a.rtmp.youtube.com/live2
 ```
 
-However, Castr.com may provide different RTMP URLs depending on your region or plan. Always check your Castr.com dashboard for the correct RTMP URL.
+**Facebook Live:**
+```
+rtmps://live-api-s.facebook.com:443/rtmp/
+```
+
+For custom RTMP servers, enter your own server URL.
 
 ## Streaming Settings
 
@@ -148,13 +153,13 @@ These settings are optimized for smooth streaming to most platforms while mainta
 - Invalid RTMP URL or Stream Key
 - Video file is corrupted or unsupported format
 - Network connectivity issues
-- Castr.com service is down
+- Streaming service is down
 
 **Solutions:**
-- Verify your Stream Key in the Castr.com dashboard
+- Verify your Stream Key in your streaming service dashboard
 - Try a different video file
 - Check your internet connection
-- Verify Castr.com service status
+- Verify streaming service status
 
 ### Video plays too fast or too slow
 
@@ -239,8 +244,8 @@ wails build -platform linux/amd64
 ## Support
 
 For issues related to:
-- **ReStreamer app:** Create an issue in this repository
-- **Castr.com:** Contact Castr.com support
+- **Atomation ReStreamer:** Create an issue in this repository
+- **Streaming services:** Contact your streaming service support
 - **FFmpeg:** Visit https://ffmpeg.org/
 
 ## License
@@ -251,4 +256,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Built with [Wails](https://wails.io/)
 - Powered by [FFmpeg](https://ffmpeg.org/)
-- Designed for [Castr.com](https://castr.com/)
+- Created by Atomation

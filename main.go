@@ -19,7 +19,7 @@ func main() {
 
 	// Create application with options
 	err := wails.Run(&options.App{
-		Title:  "OH.Report ReStreamer",
+		Title:  "Atomation ReStreamer",
 		Width:  800,
 		Height: 600,
 		AssetServer: &assetserver.Options{

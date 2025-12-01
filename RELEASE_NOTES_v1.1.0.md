@@ -1,4 +1,4 @@
-# What's New in v1.1.0
+# Atomation ReStreamer v1.1.0
 
 ## Major Features
 
@@ -33,13 +33,13 @@
 
 ## Download
 
-Download **OH.Report-ReStreamer.exe** below and run it. FFmpeg binaries are included in the executable.
+Download **Atomation-ReStreamer.exe** below and run it. FFmpeg binaries are included in the executable.
 
 ## Installation
 
-1. Download `OH.Report-ReStreamer.exe` from the assets below
+1. Download `Atomation-ReStreamer.exe` from the assets below
 2. Run the executable - no installation required!
-3. Select your video file, enter your RTMP details, and start streaming
+3. Select your video file, select your streaming service, enter your stream key, and start streaming
 
 ## Requirements
 
@@ -54,4 +54,6 @@ Download **OH.Report-ReStreamer.exe** below and run it. FFmpeg binaries are incl
 
 ---
 
-**Full Changelog**: https://github.com/atomicsunset/ReStreamer/compare/v1.0.0...v1.1.0
+---
+
+**Created by Atomation**

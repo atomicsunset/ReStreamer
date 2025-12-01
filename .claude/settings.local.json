@@ -41,7 +41,8 @@
       "Bash(start \"\" \"RELEASE_NOTES_v1.1.0.md\")",
       "Bash(xcopy /E /I /H /Y \"C:\\OHREPORT\\Dropbox\\01_vMIX\\Tools\\ReStreamer\" \"C:\\OHREPORT\\Dropbox\\01_vMIX\\Tools\\ReStreamer-Private\")",
       "Bash(git init:*)",
-      "Bash(git config:*)"
+      "Bash(git config:*)",
+      "Bash(start \"\" \"build\\bin\\Atomation-ReStreamer.exe\")"
     ],
     "deny": [],
     "ask": []

@@ -1,11 +1,11 @@
-# OH.Report ReStreamer - Deployment Guide
+# Atomation ReStreamer - Deployment Guide
 
 ## Is it 100% Standalone?
 
 **ABSOLUTELY YES!** The application is a **SINGLE .EXE FILE** - truly standalone!
 
 ### What's Included:
-- **OH.Report-ReStreamer.exe** (209 MB) - Everything in one file!
+- **Atomation-ReStreamer.exe** (209 MB) - Everything in one file!
   - Application UI and logic
   - FFmpeg video processing (embedded)
   - FFprobe video analysis (embedded)
@@ -25,7 +25,7 @@
 ### Distribution Options:
 
 #### Single File Distribution (Recommended) ⭐
-1. Copy `build/bin/OH.Report-ReStreamer.exe`
+1. Copy `build/bin/Atomation-ReStreamer.exe`
 2. Send the single .exe file to users
 3. Users double-click to run - that's it!
 

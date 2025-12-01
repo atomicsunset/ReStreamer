@@ -1,6 +1,6 @@
 @echo off
 echo ========================================
-echo OH.Report ReStreamer - Deployment
+echo Atomation ReStreamer - Deployment
 echo ========================================
 echo.
 
@@ -43,7 +43,7 @@ echo.
 echo The standalone application is ready in: build\bin\
 echo.
 echo Contents:
-echo - OH.Report-ReStreamer.exe  (Main application)
+echo - Atomation-ReStreamer.exe  (Main application)
 echo - ffmpeg.exe                (Video processing)
 echo - ffprobe.exe               (Video analysis)
 echo.
