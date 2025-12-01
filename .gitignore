@@ -1,0 +1,51 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Dependency directories
+vendor/
+
+# Go workspace file
+go.work
+
+# Wails build directory
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# FFmpeg binaries
+ffmpeg.exe
+ffmpeg
+ffprobe.exe
+ffprobe
+.aider*
+
+# Backup files
+*.backup
+
+# Windows reserved filename
+nul
+
+# Old distribution directory
+dist/
+
+# Test executables
+test.exe

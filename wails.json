@@ -1,0 +1,20 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "OH.Report ReStreamer",
+  "outputfilename": "OH.Report-ReStreamer",
+  "frontend:install": "echo 'No frontend install needed'",
+  "frontend:build": "echo 'Using pre-built frontend'",
+  "frontend:dev:watcher": "echo 'No dev watcher'",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "OH.Report",
+    "email": "info@oh.report"
+  },
+  "info": {
+    "companyName": "OH.Report",
+    "productName": "OH.Report ReStreamer",
+    "productVersion": "1.0.0",
+    "copyright": "Copyright © 2025 OH.Report",
+    "comments": "Stream videos to Castr/Facebook/YouTube without vMix"
+  }
+}
