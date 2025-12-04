@@ -44,8 +44,9 @@ ffprobe
 # Windows reserved filename
 nul
 
-# Old distribution directory
-dist/
+# Old distribution directory (but not frontend/dist which is source)
+/dist/
+!frontend/dist/
 
 # Test executables
 test.exe

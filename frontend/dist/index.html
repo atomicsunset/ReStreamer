@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomation ReStreamer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Atomation ReStreamer</h1>
+        </header>
+
+        <div class="main-layout">
+            <!-- Left Column: Configuration -->
+            <div class="config-column">
+                <div class="form-group">
+                    <label for="videoPath">Video File</label>
+                    <div class="file-input-wrapper">
+                        <input type="text" id="videoPath" placeholder="Select video or m3u playlist..." readonly>
+                        <button id="browseBtn" class="btn btn-secondary">Browse</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="serviceSelect">Service</label>
+                    <select id="serviceSelect">
+                        <option value="">Custom RTMP...</option>
+                        <option value="rtmps://live-api-s.facebook.com:443/rtmp/">Facebook Live</option>
+                        <option value="rtmp://a.rtmp.youtube.com/live2">YouTube Live</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="qualitySelect">Quality</label>
+                    <select id="qualitySelect">
+                        <option value="low">Low (1 Mbps) - 540p</option>
+                        <option value="medium">Medium (2 Mbps) - 720p</option>
+                        <option value="high" selected>High (3 Mbps) - 1080p</option>
+                        <option value="ultra">Ultra (5 Mbps) - 1080p</option>
+                    </select>
+                </div>
+
+<div class="form-group" id="rtmpUrlGroup">
+                    <label for="rtmpUrl">RTMP URL</label>
+                    <input type="text" id="rtmpUrl" placeholder="rtmp://your-server/app" value="">
+                </div>
+
+                <div class="form-group" id="streamKeyGroup">
+                    <label for="streamKey">Stream Key</label>
+                    <input type="password" id="streamKey" placeholder="Your stream key">
+                </div>
+            </div>
+
+            <!-- Right Column: Status & Controls -->
+            <div class="control-column">
+                <div class="status-row">
+                    <div id="statusIndicator" class="status-indicator stopped">
+                        <span class="status-dot"></span>
+                        <span id="statusText">Ready</span>
+                    </div>
+                    <button id="compactModeBtn" class="btn btn-compact" title="Toggle Compact Mode">
+                        <span class="compact-icon">⊟</span>
+                    </button>
+                </div>
+
+                <div id="timerDisplay" class="timer-display" style="display: none;">
+                    <div class="timer-item">
+                        <span class="timer-label">Elapsed</span>
+                        <span id="elapsedTime" class="timer-value">00:00:00</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-label">Remaining</span>
+                        <span id="remainingTime" class="timer-value">00:00:00</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-label">Total</span>
+                        <span id="totalTime" class="timer-value">00:00:00</span>
+                    </div>
+                </div>
+
+                <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+                <div class="button-section">
+                    <button id="startBtn" class="btn btn-primary">
+                        <span>▶</span> Start
+                    </button>
+                    <button id="stopBtn" class="btn btn-danger" disabled>
+                        <span>⬛</span> Stop
+                    </button>
+                </div>
+
+                <div class="options-section">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="autoStopCheckbox">
+                        <span>Auto-stop when ended</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stream Ended Popup -->
+    <div id="streamEndedPopup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <div class="popup-icon">✓</div>
+            <h2>Stream Ended</h2>
+            <p>Your broadcast has completed successfully.</p>
+            <button id="dismissPopupBtn" class="btn btn-primary">Dismiss</button>
+        </div>
+    </div>
+
+    <script src="wailsjs/runtime/runtime.js"></script>
+    <script src="wailsjs/go/main/App.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

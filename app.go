@@ -121,6 +121,16 @@ func (a *App) GetQuality() string {
 	return a.streamer.GetQuality()
 }
 
+// SetWindowSize sets the window to the specified dimensions
+func (a *App) SetWindowSize(width, height int) {
+	runtime.WindowSetSize(a.ctx, width, height)
+}
+
+// SetWindowAlwaysOnTop sets whether the window should stay on top
+func (a *App) SetWindowAlwaysOnTop(onTop bool) {
+	runtime.WindowSetAlwaysOnTop(a.ctx, onTop)
+}
+
 // StreamStatus represents the current status of the stream
 type StreamStatus struct {
 	IsStreaming      bool    `json:"isStreaming"`

@@ -12,6 +12,10 @@ export function SetAutoStopOnEnd(arg1:boolean):Promise<void>;
 
 export function SetQuality(arg1:string):Promise<void>;
 
+export function SetWindowAlwaysOnTop(arg1:boolean):Promise<void>;
+
+export function SetWindowSize(arg1:number,arg2:number):Promise<void>;
+
 export function StartStream(arg1:string,arg2:string,arg3:string):Promise<void>;
 
 export function StopStream():Promise<void>;

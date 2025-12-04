@@ -22,6 +22,14 @@ export function SetQuality(arg1) {
   return window['go']['main']['App']['SetQuality'](arg1);
 }
 
+export function SetWindowAlwaysOnTop(arg1) {
+  return window['go']['main']['App']['SetWindowAlwaysOnTop'](arg1);
+}
+
+export function SetWindowSize(arg1, arg2) {
+  return window['go']['main']['App']['SetWindowSize'](arg1, arg2);
+}
+
 export function StartStream(arg1, arg2, arg3) {
   return window['go']['main']['App']['StartStream'](arg1, arg2, arg3);
 }
